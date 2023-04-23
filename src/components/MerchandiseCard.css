@@ -1,0 +1,11 @@
+.merchandise-card {
+    display: flex;
+    align-items: center;
+    justify-self: auto;
+    height: 100vh;
+}
+
+.merchandise-card img {
+    width: 100%;
+    
+}

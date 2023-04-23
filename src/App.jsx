@@ -1,15 +1,19 @@
-import { useState } from 'react'
-import './App.css'
-import Heading from './Heading'
 import React from 'react'
+import './App.css'
+import Heading from './components/Heading'
+import Homepage from './pages/Homepage'
+import Footer from './components/Footer'
+
+import { useState } from 'react'
 
 function App() {
-  const [count, setCount] = useState(0)
+ 
 
   return (
     <div className="App">
       <Heading />
-        
+      <Homepage />
+      <Footer />  
     </div>
   )
 }

@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  }
+
+  .footer-container {
+    background-color: #3A4895;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
