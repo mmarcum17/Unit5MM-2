@@ -2,6 +2,9 @@ import React, {useEffect, useState} from 'react'
 
 function Categories() {
 
+    const[products, setMerchandise] = useState([])
+
+    
     useEffect(
         ()=>{
             console.log("homepage loaded")

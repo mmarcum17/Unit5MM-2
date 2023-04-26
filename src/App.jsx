@@ -1,8 +1,8 @@
 import React from 'react'
 import './App.css'
-import Heading from './components/Heading'
-import Homepage from './pages/Homepage'
-import Footer from './components/Footer'
+import Heading from './components/Heading/Heading'
+import Homepage from './pages/Homepage/Homepage'
+import Footer from './components/Footer/Footer'
 
 import { useState } from 'react'
 
