@@ -1,24 +1,25 @@
 import React, {useEffect, useState}  from 'react'
 import './Homepage.css'
-import MerchandiseCard from './components/MerchandiseCard'
-import Categories from './components/Categories'
-
+import MerchandiseCard from '../components/Merchandise Card/MerchandiseCard'
+import Categories from '../components/Categories/Categories'
+import axios from 'axios'
 
 
 function Homepage() {
 
-    const[products, setMerchandise] = useState([])
+    const[products, setProducts] = useState([])
 
     useEffect(
         ()=>{
             console.log("homepage loaded")
-            fetch('https://fakestoreapi.com/products')
-            .then(res=>res.json())
-            .then(json=>console.log(json))
-            .then(res =>{
-                console.log(res.data.results)
-                setMerchandise(res.data.results)
+            axios.get('https://fakestoreapi.com/products')
+            .then(res => {
+                //see what you want
+                    console.log(res.data)
+                    //store it in state
+                    setProducts(res.data)
             })
+            .catch(err => console.log(err))
         }
     )
 
